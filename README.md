@@ -14,7 +14,7 @@ Huggingface (Transformers) [documentation](https://huggingface.co/transformers/)
 
 
 ### Related BERT implementations
-Pairwise document classification from [Wikipedia](https://arxiv.org/abs/2003.09881)
+Pairwise document classification from Wikipedia [articles](https://arxiv.org/abs/2003.09881)
 
 Use of BERT encodings of paper tiles for research paper [recommendation](http://ceur-ws.org/Vol-2431/paper2.pdf)
 
