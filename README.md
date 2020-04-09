@@ -5,11 +5,13 @@
 ### Language models
 Original [BERT](https://arxiv.org/abs/1810.04805) paper, GitHub [page](https://github.com/google-research/bert)
 
-[SciBERT](https://arxiv.org/abs/1903.10676), GitHub [page](https://github.com/allenai/scibert), installable directly within Pytorch/Transformers
+[SciBERT](https://arxiv.org/abs/1903.10676), GitHub [page](https://github.com/allenai/scibert)
 
-[BioBERT](https://arxiv.org/abs/1901.08746), GitHub [page](https://github.com/dmis-lab/biobert), pretrained [weights](https://github.com/naver/biobert-pretrained/releases), and [reference](https://github.com/MeRajat/SolvingAlmostAnythingWithBert/tree/ner_medical) for making weights Pytorch compatible
+[BioBERT](https://arxiv.org/abs/1901.08746), GitHub [page](https://github.com/dmis-lab/biobert)
 
-Huggingface (Transformers) [documentation](https://huggingface.co/transformers/)
+Huggingface (Transformers) [documentation](https://huggingface.co/transformers/) and list of all directly supported [models](https://huggingface.co/models?)
+
+
 
 ### Related BERT implementations
 Pairwise document classification from [Wikipedia](https://arxiv.org/abs/2003.09881)
