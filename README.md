@@ -1,7 +1,7 @@
 # doc2rec
 
-![Alt Text](/graphImage1.jpg)
-![Alt Text](/graphImage2.jpg)
+![Alt Text](/graphImage.jpg)
+![Alt Text](/graphImage.jpg)
 
 ## References:
 ### Language models
