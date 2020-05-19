@@ -8,7 +8,7 @@ i) Construct 5 graphical representations of local pubmed citation networks cente
 
 ![](/graphImage1.jpg)
 
-Distances are signed with an article in the bibliography connected to the seed with edge length -1. b) edge length is the ratio of the union of the bibliographies of the seed and the target and the intersection c) the same ratio with each reference weighted by the inverse of the size of its citeography d) edge length is the ratio of the union of the citeographies of the seed and the target and the intersection e) each citing article is weighted by the size of its bibliography. The graphs are iteratively built as depicted below (c/d shown: get bibliography of seed, get citeographies of bibliography, get bibliographies of citeographies and the size of their respective citeographies, calculate ratios).
+Distances are signed with an article in the bibliography connected to the seed with edge length -1. b) edge length is the ratio of the union of the bibliographies of the seed and the target and the intersection c) the same ratio with each reference weighted by the inverse of the size of its citeography d) edge length is the ratio of the union of the citeographies of the seed and the target and the intersection e) each citing article is weighted by the size of its bibliography. The graphs are iteratively built as depicted below (b/c shown: get bibliography of seed, get citeographies of bibliography, get bibliographies of citeographies and the size of their respective citeographies, calculate ratios).
 
 ![](/graphImage2.jpg)
 
