@@ -1,6 +1,6 @@
 # doc2rec
 
-## AIMS:
+## Aims:
 
 ### 1) Investigate semantic relationships within the pubmed citation network.
 
@@ -34,7 +34,16 @@ i) Construct graphs with authors as nodes in the same manner as was done for 1)
 
 ii) Train a binary classifier to predict connections among authors in the same manner as was done for 2/3
 
+## Progress:
 
+### HAVE:
+Basic function to construct cosine similarities
+Function returning graph given necessary pmids
+
+### NEED:
+Function gathering necessary pmids for given seed/graph structure (currently have case a) more or less)
+Improvement of vectorization routine - optimization of hidden layer representation/vector normalization/review of test data
+Compilation of pieces into parent script with basic analysis (e.g. scatter plots of edge length vs. cosine similarity)
 
 ## References:
 ### Language models
