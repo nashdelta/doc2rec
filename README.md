@@ -14,7 +14,27 @@ Distances are signed with an article in the bibliography connected to the seed w
 
 ii) Retrive the cosine similarities of the state-of-the-art (assumed to be BioBERT) vector representations of pairs of pubmed abstracts.
 
-iii) Compare graph edges and cosine similarities. Open questions: How does the cosine similarity scale with edge length? 
+iii) Compare graph edges and cosine similarities. Open questions: How does the cosine similarity scale with edge length? How wide is the distribution? How much does it vary by seed, by key-word? In general, how much semantic information is provided by a citation?
+
+### 2) Train a binary classifier to predict connections to existing abstracts from a "novel" abstract
+
+i) Generate (+/-) training data based on combinations of cosine similarities and graph distances. (-) training data is not a problem because the goal is not to predict new connections between existing abstracts.
+
+ii) Fine tune BERT starting from the pretrained BioBERT weights for a binary classification problem given two vectors (pairs of abstracts) as input. Output is related/unrelated.
+
+### 3) Train a binary classifier to predict novel connections AMONG existing abstracts
+
+i) As in 2), generate (+/-) training data based on combinations of cosine similarities and graph distances. (-) training data is a challenge. Need to identify pairs of connected but semantically unrelated abstracts (e.g. in the bibliography but low cosine similarity). Not clear what is the best case.
+
+ii) Same as 2)
+
+### 3) Aggregate abstracts by first/corresponding author
+
+i) Construct graphs with authors as nodes in the same manner as was done for 1)
+
+ii) Train a binary classifier to predict connections among authors in the same manner as was done for 2/3
+
+
 
 ## References:
 ### Language models
