@@ -4,15 +4,17 @@
 
 ### 1) Investigate semantic relationships within the pubmed citation network.
 
-i) Construct 5 graphical representations of local pubmed citation networks centered on "seed" articles. a) edge length is the direct citation distance (e.g. an article in the citeography of an article in the citeography of the seed has edge length 2). The graph is iteratively built as depicted below:
+i) Construct 5 graphical representations of local pubmed citation networks centered on "seed" articles. a) edge length is the direct citation distance (e.g. an article in the citeography of an article in the citeography of the seed has edge length 2). The graph is iteratively built as depicted below selecting a single representative next-next neighbor etc.:
 
 ![](/graphImage1.jpg)
 
 Distances are signed with an article in the bibliography connected to the seed with edge length -1. b) edge length is the ratio of the union of the bibliographies of the seed and the target and the intersection c) the same ratio with each reference weighted by the inverse of the size of its citeography d) edge length is the ratio of the union of the citeographies of the seed and the target and the intersection e) each citing article is weighted by the size of its bibliography. The graphs are iteratively built as depicted below (c/d shown: get bibliography of seed, get citeographies of bibliography, get bibliographies of citeographies and the size of their respective citeographies, calculate ratios).
 
-relationship between the cosine similarities of the state-of-the-art vector representations of pairs of pubmed abstracts (assumed to be BioBERT)
-![](/graphImage1.jpg)
 ![](/graphImage2.jpg)
+
+ii) Retrive the cosine similarities of the state-of-the-art (assumed to be BioBERT) vector representations of pairs of pubmed abstracts.
+
+iii) Compare graph edges and cosine similarities. Open questions: How does the cosine similarity scale with edge length? 
 
 ## References:
 ### Language models
