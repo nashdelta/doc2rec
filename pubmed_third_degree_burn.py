@@ -115,3 +115,5 @@ with open ('crispr_abstracts.tab') as f:
 
 for accession in accession_list:
     pubmed_third_degree_burn(accession)
+    
+#!esearch -db pubmed -query crispr[Mesh] | efetch -format xml | xtract -pattern PubmedArticle -element MedlineCitation/PMID -element AbstractText -block Author -sep " " -tab "|" -element Initials,LastName > crispr_abstracts.tab
