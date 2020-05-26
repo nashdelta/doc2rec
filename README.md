@@ -1,4 +1,4 @@
-# doc2rec
+# doc2rec: /panfs/pan1.be-md.ncbi.nlm.nih.gov/pmid2rec
 
 ## Aims:
 
