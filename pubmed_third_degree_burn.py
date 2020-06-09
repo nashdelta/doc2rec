@@ -103,6 +103,33 @@ def pubmed_third_degree_burn(seed):
     
     with open(str(seed) + '.json', 'w') as fp:
         json.dump(result_dict, fp, indent=4)
+        
+def json_to_table(jsonfile):
+    
+    with open(jsonfile) as f:
+        data = json.load(f)
+
+        #We want a comma-separate list of keys from each dictionary
+        primary_cite_str = (",".join(data['primary_citeography'].keys()))
+        secondary_cite_str = (",".join(data['secondary_citeography'].keys()))
+        tertiary_cite_str = (",".join(data['tertiary_citeography'].keys()))
+        primary_bib_str = (",".join(data['primary_bibliography'].keys()))
+        secondary_bib_str = (",".join(data['secondary_bibliography'].keys()))
+        tertiary_bib_str = (",".join(data['tertiary_bibliography'].keys()))
+
+    p = Path(jsonfile)
+    PMID = p.stem
+    
+    with open(PMID + '.tab', 'w') as outfile:
+        print(primary_cite_str, 
+              primary_bib_str, 
+              secondary_cite_str,
+              secondary_bib_str,
+              tertiary_cite_str,
+              tertiary_bib_str,
+              sep = '\t',
+              file = outfile
+             )
 
 with open ('crispr_abstracts.tab') as f:
     accession_list = []
