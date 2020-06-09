@@ -1,6 +1,7 @@
 import subprocess
 import random
 import json
+from pathlib import Path
 
 def pmid_to_citeography(pmid, sample_size=0):
     """
